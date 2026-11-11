@@ -1,0 +1,258 @@
+{
+  "title": "Gestione delle prenotazioni degli spazi",
+  "description": "Prototipo per consultare la disponibilità mensile degli spazi, filtrare le richieste e registrare nuove prenotazioni per associazioni inventate.",
+  "accent": "indigo",
+  "pages": [
+    {
+      "id": "riepilogo",
+      "title": "Riepilogo mensile",
+      "description": "Occupazione degli spazi comunali e richieste da gestire nel mese.",
+      "metrics": [
+        {
+          "label": "Spazi gestiti",
+          "value": "3"
+        },
+        {
+          "label": "Prenotazioni del mese",
+          "value": "28"
+        },
+        {
+          "label": "Ore occupate",
+          "value": "146"
+        },
+        {
+          "label": "Occupazione media",
+          "value": "62%"
+        },
+        {
+          "label": "Richieste in attesa",
+          "value": "4"
+        }
+      ],
+      "columns": [
+        "Spazio",
+        "Prenotazioni",
+        "Ore occupate",
+        "Occupazione",
+        "Richieste in attesa"
+      ],
+      "rows": [
+        [
+          "Sala civica Lumo",
+          "12",
+          "58",
+          "71%",
+          "2"
+        ],
+        [
+          "Auditorium Vela",
+          "8",
+          "52",
+          "65%",
+          "1"
+        ],
+        [
+          "Palestra Nubi",
+          "8",
+          "36",
+          "45%",
+          "1"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "calendario-sale",
+      "title": "Calendario delle sale",
+      "description": "Consulta le prenotazioni per spazio e fascia oraria. La tabella può essere filtrata per sala o data.",
+      "metrics": [
+        {
+          "label": "Spazi disponibili",
+          "value": "3"
+        },
+        {
+          "label": "Prenotazioni visualizzate",
+          "value": "6"
+        }
+      ],
+      "columns": [
+        "Data",
+        "Spazio",
+        "Fascia oraria",
+        "Associazione",
+        "Attività",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "04/06/2026",
+          "Sala civica Lumo",
+          "09:00–11:00",
+          "Circolo delle Brume",
+          "Laboratorio creativo",
+          "Confermata"
+        ],
+        [
+          "04/06/2026",
+          "Auditorium Vela",
+          "14:00–17:00",
+          "Compagnia dei Nodi",
+          "Prove teatrali",
+          "Confermata"
+        ],
+        [
+          "06/06/2026",
+          "Palestra Nubi",
+          "10:00–12:00",
+          "Gruppo delle Lanterne",
+          "Allenamento",
+          "Confermata"
+        ],
+        [
+          "09/06/2026",
+          "Sala civica Lumo",
+          "16:00–18:00",
+          "Officina delle Foglie",
+          "Incontro associativo",
+          "In attesa"
+        ],
+        [
+          "12/06/2026",
+          "Auditorium Vela",
+          "18:00–20:00",
+          "Coro dei Petali",
+          "Prove musicali",
+          "Confermata"
+        ],
+        [
+          "15/06/2026",
+          "Palestra Nubi",
+          "15:00–17:00",
+          "Rete dei Sentieri",
+          "Attività sportiva",
+          "In attesa"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "prenotazioni",
+      "title": "Elenco prenotazioni",
+      "description": "Filtra le richieste per spazio, associazione o stato e consulta fasce orarie e tariffe.",
+      "metrics": [
+        {
+          "label": "Tariffe registrate",
+          "value": "6"
+        },
+        {
+          "label": "Tariffa media",
+          "value": "€ 42"
+        }
+      ],
+      "columns": [
+        "Codice richiesta",
+        "Associazione",
+        "Spazio",
+        "Data",
+        "Fascia oraria",
+        "Tariffa",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "SP-26041",
+          "Circolo delle Brume",
+          "Sala civica Lumo",
+          "04/06/2026",
+          "09:00–11:00",
+          "€ 30",
+          "Confermata"
+        ],
+        [
+          "SP-26042",
+          "Compagnia dei Nodi",
+          "Auditorium Vela",
+          "04/06/2026",
+          "14:00–17:00",
+          "€ 75",
+          "Confermata"
+        ],
+        [
+          "SP-26043",
+          "Gruppo delle Lanterne",
+          "Palestra Nubi",
+          "06/06/2026",
+          "10:00–12:00",
+          "€ 40",
+          "Confermata"
+        ],
+        [
+          "SP-26044",
+          "Officina delle Foglie",
+          "Sala civica Lumo",
+          "09/06/2026",
+          "16:00–18:00",
+          "€ 30",
+          "In attesa"
+        ],
+        [
+          "SP-26045",
+          "Coro dei Petali",
+          "Auditorium Vela",
+          "12/06/2026",
+          "18:00–20:00",
+          "€ 50",
+          "Confermata"
+        ],
+        [
+          "SP-26046",
+          "Rete dei Sentieri",
+          "Palestra Nubi",
+          "15/06/2026",
+          "15:00–17:00",
+          "€ 40",
+          "In attesa"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "nuova-richiesta",
+      "title": "Nuova richiesta",
+      "description": "Registra una prenotazione indicando associazione, spazio, data, orario e tariffa prevista.",
+      "metrics": [],
+      "columns": [
+        "Associazione",
+        "Spazio",
+        "Data",
+        "Ora inizio",
+        "Ora fine",
+        "Attività",
+        "Tariffa",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Associazione",
+          "Spazio",
+          "Data",
+          "Ora inizio",
+          "Ora fine",
+          "Attività",
+          "Tariffa",
+          "Stato"
+        ]
+      ],
+      "form": [
+        "Associazione",
+        "Spazio",
+        "Data",
+        "Ora inizio",
+        "Ora fine",
+        "Attività",
+        "Tariffa",
+        "Stato"
+      ]
+    }
+  ]
+}
